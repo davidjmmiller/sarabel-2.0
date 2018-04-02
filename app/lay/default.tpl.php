@@ -18,7 +18,6 @@
     </div>
     <hr />
     <footer>
-        <?php echo $footer; ?>
         <small>This is the footer block</small>
     </footer>
 </div>
