@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // Define paths
 define('PATH_APP', '../'.APP_NAME.'/');
@@ -11,6 +12,7 @@ define('PATH_LIB', PATH_APP.'lib/');
 define('PATH_TPL', PATH_APP.'tpl/');
 define('PATH_LAY', PATH_APP.'lay/');
 define('PATH_BLK', PATH_APP.'blk/');
+define('PATH_LAN', PATH_APP.'lan/');
 
 // Loading config file
 require PATH_CNF.'global.cnf.php';
@@ -24,6 +26,28 @@ require PATH_CORE_LIB.'database.lib.php';
 require PATH_CORE_LIB.'form.lib.php';
 require PATH_CORE_LIB.'mail.lib.php';
 
+
+// Detecting language
+if (!isset($_SESSION['lang'])){
+    $_SESSION['lang'] = $config['default_lang'];
+}
+
+$parameter = 'lang';
+if (isset($_GET[$parameter])){
+    switch($_GET[$parameter])
+    {
+        case 'en':
+        case 'es':
+            $_SESSION['lang'] = $_GET[$parameter];
+            break;
+        default:
+            $_SESSION['lang'] = $config['default_lang'];
+            break;
+    }
+}
+
+// Loading language file
+require PATH_LAN.$_SESSION['lang'].'.lan.php';
 
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 $controller_name = ($request_uri[0] == '/' || $request_uri[0] == '' ? '/index': $request_uri[0]);

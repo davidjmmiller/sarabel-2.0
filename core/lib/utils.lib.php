@@ -3,9 +3,9 @@
 function t($key)
 {
     global $lang;
-    if (isset($lang[$_SESSION['lang']][$key]))
+    if (isset($lang[ $_SESSION['lang'] ][$key]))
     {
-        return $lang[$_SESSION['lang']][$key];
+        return $lang[ $_SESSION['lang'] ][$key];
     }
     return '*'.$key.'*';
 }
