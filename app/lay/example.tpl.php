@@ -8,19 +8,16 @@
     <title>Sarabel 2.0</title>
 </head>
 <body>
-<div class="wrapper">
     <header>
-        <h1>Header</h1>
+        <?php echo $global_header; ?>
     </header>
     <hr />
-    <div class="content">
-        <?php echo $content; ?>
+    <div class="wrapper">
+    <?php echo $content; ?>
     </div>
     <hr />
     <footer>
-        <?php echo $footer; ?>
-        <small>This is the footer block</small>
+        <?php echo $global_footer; ?>
     </footer>
-</div>
 </body>
 </html>

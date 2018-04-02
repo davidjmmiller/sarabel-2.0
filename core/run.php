@@ -10,6 +10,7 @@ define('PATH_MDL', PATH_APP.'mdl/');
 define('PATH_LIB', PATH_APP.'lib/');
 define('PATH_TPL', PATH_APP.'tpl/');
 define('PATH_LAY', PATH_APP.'lay/');
+define('PATH_BLK', PATH_APP.'blk/');
 
 // Loading config file
 require PATH_CNF.'global.cnf.php';
@@ -26,11 +27,13 @@ require PATH_CORE_LIB.'mail.lib.php';
 
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 $controller_name = ($request_uri[0] == '/' || $request_uri[0] == '' ? '/index': $request_uri[0]);
-
 $controller_name = substr($controller_name,1);
 $controller_path = PATH_CTL.$controller_name.'.ctl.php';
 $controller_name = (file_exists($controller_path) ? $controller_name : '404');
 $controller_path = PATH_CTL.$controller_name.'.ctl.php';
+
+// Defaults
+$layout_name = 'default';
 
 // Start output capture
 ob_start();
@@ -48,5 +51,26 @@ if (file_exists($view)) {
 $content = ob_get_contents();
 ob_end_clean();
 
+$layout_path = PATH_LAY.$layout_name.'.tpl.php';
+
 // Loading layout
-require (PATH_LAY.'default.tpl.php');
+if ($layout_name != '' && file_exists($layout_path)) {
+
+    // Loading blocks
+    if (isset($load_blocks) && is_array($load_blocks) && count($load_blocks) >0){
+        foreach($load_blocks as $block){
+            ob_start();
+            $block_path = PATH_BLK.$block.'.blk.php';
+            if (file_exists($block_path)){
+                require $block_path;
+            }
+            $block_varname = str_replace(array('/','-',' '),'_',$block);
+            $$block_varname = ob_get_contents();
+            ob_end_clean();
+        }
+    }
+    require($layout_path);
+}
+else {
+    echo $content;
+}
