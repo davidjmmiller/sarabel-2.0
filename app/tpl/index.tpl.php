@@ -1,1 +1,1 @@
-<h1><?php echo t('main_title');?></h1>
+<p><?php echo t('initial_message');?></p>

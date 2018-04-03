@@ -1,1 +1,1 @@
-<h1>Header Global</h1>
+<h1><?php echo t('header_title'); ?></h1>

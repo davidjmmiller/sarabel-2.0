@@ -1,1 +1,1 @@
-<small>Footer Global</small>
+<small>Version <?php echo Core::$version; ?></small>

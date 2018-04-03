@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+// Core Informative
+class Core {
+    public static $version = '2.0.0';
+}
+
 // Define paths
 define('PATH_APP', '../'.APP_NAME.'/');
 define('PATH_CORE', '../core/');

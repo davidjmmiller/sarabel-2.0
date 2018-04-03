@@ -1,7 +1,6 @@
 <?php
 
 
-$layout_name = 'example';
+$layout_name = 'default';
 $load_blocks = ['global/header', 'global/footer'];
 
-header('Location: /admin/dashboard');
