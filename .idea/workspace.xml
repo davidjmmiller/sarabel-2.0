@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1170ef5-a5d2-4e4c-92c1-da20c94a2417" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/mod/user.mod.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/cnf/middleware.cnf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/lay/default.ctl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mdw/auth.mdw.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blk/global/footer.blk.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/blk/global/footer.blk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blk/global/header.blk.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/blk/global/header.blk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ctl/index.ctl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ctl/index.ctl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lan/en.lan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lan/en.lan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lan/es.lan.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lan/es.lan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lay/default.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/lay/default.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lay/example.tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tpl/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tpl/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ctl/about/index.ctl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tpl/about/index.tpl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/run.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/run.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,83 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.ctl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/ctl/admin/dashboard.ctl.php">
+      <file leaf-file-name="auth.mdw.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/mdw/auth.mdw.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="280">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.mod.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mod/user.mod.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ctl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/ctl/index.ctl.php">
+      <file leaf-file-name="middleware.cnf.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/cnf/middleware.cnf.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lay/default.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.blk.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/blk/global/header.blk.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="36" selection-start-column="36" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.blk.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/blk/global/footer.blk.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/tpl/index.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="en.lan.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lan/en.lan.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="es.lan.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/lan/es.lan.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -107,8 +40,26 @@
       <file leaf-file-name="run.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/run.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="291">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.ctl.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/lay/default.ctl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ctl.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/ctl/index.ctl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" lean-forward="true" selection-start-line="4" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -158,12 +109,15 @@
         <option value="$PROJECT_DIR$/app/lay/example.tpl.php" />
         <option value="$PROJECT_DIR$/app/ctl/index.ctl.php" />
         <option value="$PROJECT_DIR$/app/lay/default.tpl.php" />
-        <option value="$PROJECT_DIR$/core/run.php" />
         <option value="$PROJECT_DIR$/app/blk/global/footer.blk.php" />
         <option value="$PROJECT_DIR$/app/tpl/index.tpl.php" />
         <option value="$PROJECT_DIR$/app/blk/global/header.blk.php" />
         <option value="$PROJECT_DIR$/app/lan/en.lan.php" />
         <option value="$PROJECT_DIR$/app/lan/es.lan.php" />
+        <option value="$PROJECT_DIR$/app/cnf/middleware.cnf.php" />
+        <option value="$PROJECT_DIR$/app/mdw/auth.mdw.php" />
+        <option value="$PROJECT_DIR$/core/run.php" />
+        <option value="$PROJECT_DIR$/app/lay/default.ctl.php" />
       </list>
     </option>
   </component>
@@ -200,20 +154,13 @@
               <item name="sarabel20" type="b2602c69:ProjectViewProjectNode" />
               <item name="sarabel20" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="blk" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cnf" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sarabel20" type="b2602c69:ProjectViewProjectNode" />
               <item name="sarabel20" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="blk" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="global" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="sarabel20" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sarabel20" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lan" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ctl" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sarabel20" type="b2602c69:ProjectViewProjectNode" />
@@ -225,7 +172,7 @@
               <item name="sarabel20" type="b2602c69:ProjectViewProjectNode" />
               <item name="sarabel20" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tpl" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="mdw" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sarabel20" type="b2602c69:ProjectViewProjectNode" />
@@ -288,12 +235,12 @@
       <workItem from="1522660628217" duration="693000" />
       <workItem from="1522670152218" duration="17937000" />
       <workItem from="1522771085939" duration="374000" />
-      <workItem from="1522772975716" duration="1821000" />
+      <workItem from="1522772975716" duration="6842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25624000" />
+    <option name="totallyTimeSpent" value="30645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -327,27 +274,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/ctl/index.ctl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/ctl/404.ctl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/404.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tpl/about/index.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -619,24 +545,10 @@
     <entry file="file://$PROJECT_DIR$/app/lay/example.tpl.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ctl/index.ctl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lay/default.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/run.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -672,6 +584,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/cnf/middleware.cnf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mdw/auth.mdw.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/run.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ctl/index.ctl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lay/default.ctl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

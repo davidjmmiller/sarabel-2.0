@@ -18,6 +18,7 @@ define('PATH_TPL', PATH_APP.'tpl/');
 define('PATH_LAY', PATH_APP.'lay/');
 define('PATH_BLK', PATH_APP.'blk/');
 define('PATH_LAN', PATH_APP.'lan/');
+define('PATH_MDW', PATH_APP.'mdw/');
 
 // Loading config file
 require PATH_CNF.'global.cnf.php';
@@ -31,6 +32,8 @@ require PATH_CORE_LIB.'database.lib.php';
 require PATH_CORE_LIB.'form.lib.php';
 require PATH_CORE_LIB.'mail.lib.php';
 
+// Loading middleware
+require PATH_CNF.'middleware.cnf.php';
 
 // Detecting language
 if (!isset($_SESSION['lang'])){
@@ -81,9 +84,13 @@ $content = ob_get_contents();
 ob_end_clean();
 
 $layout_path = PATH_LAY.$layout_name.'.tpl.php';
+$layout_path_ctl = PATH_LAY.$layout_name.'.ctl.php';
 
 // Loading layout
-if ($layout_name != '' && file_exists($layout_path)) {
+if ($layout_name != '' && file_exists($layout_path) && file_exists($layout_path_ctl)) {
+
+    // Loading layout controller
+    require $layout_path_ctl;
 
     // Loading blocks
     if (isset($load_blocks) && is_array($load_blocks) && count($load_blocks) >0){
