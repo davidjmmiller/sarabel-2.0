@@ -8,7 +8,11 @@ if ( !isset($_SESSION['active']) || (isset($_SESSION['active']) && $_SESSION['ac
         strstr($_SERVER['REQUEST_URI'],'/admin') !== false ){
 
         // Avoid cyclic redirect
-        if (!strstr($_SERVER['REQUEST_URI'],'/user/login')) {
+        if (
+            !strstr($_SERVER['REQUEST_URI'],'/user/login') &&
+            !strstr($_SERVER['REQUEST_URI'],'/user/register') &&
+            !strstr($_SERVER['REQUEST_URI'],'/user/forgot_password')
+        ) {
             header('Location: /user/login');
         }
     }

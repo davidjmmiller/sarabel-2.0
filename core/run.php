@@ -59,7 +59,14 @@ require PATH_LAN.$_SESSION['lang'].'.lan.php';
 
 $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 $controller_name = ($request_uri[0] == '/' || $request_uri[0] == '' ? '/index': $request_uri[0]);
+
+// Remove the / at the beginning and end
 $controller_name = substr($controller_name,1);
+
+if (substr($controller_name,-1) == '/') {
+    $controller_name = substr($controller_name,0, -1);
+}
+
 $controller_path = PATH_CTL.$controller_name.'.ctl.php';
 $controller_name = (file_exists($controller_path) ? $controller_name : '404');
 $controller_path = PATH_CTL.$controller_name.'.ctl.php';
@@ -71,13 +78,13 @@ $layout_name = 'default';
 ob_start();
 
 // Loading controller
-require ($controller_path);
+require $controller_path;
 
 // Loading view
 $view = PATH_TPL.$controller_name.'.tpl.php';
 
 if (file_exists($view)) {
-    require($view);
+    require $view;
 }
 
 $content = ob_get_contents();
